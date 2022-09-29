@@ -6,6 +6,13 @@
 
 ---
 
+# 結論
+
+- キーワード駆動テストの欠点は⭕️⭕️で解決できる
+
+
+---
+
 # 今回開発したツール
 
 ## Keydriver
@@ -14,6 +21,15 @@
 - ノーコードでe2eテストができる
 - オープンソース
 - 商用利用可(MITライセンス)
+- 気に入ったら☆(Star)ください🙇
+
+---
+
+# キーワード駆動テストとは
+
+- システムテストの技法の一つ
+- アクションキーワードとデータからなる表を使ってテストする
+- キーワード表を読み込んでSeleniumなどを動かすトライバーを作れば自動化できる
 
 ---
 
@@ -53,9 +69,17 @@
 - ドライバーを書くのが大変
 - ドライバーのメンテナンスが大変
 
-これらの欠点により幻のテスト技法となってしまったのではないだろうか。
+これらの欠点により幻のテスト技法となってしまったのではなかろうか。
 
 ## ではどうするか?
+
+---
+
+# デメリットを⭕️⭕️で解決する
+
+---
+
+# デメリットを頓知で解決する
 
 ---
 
@@ -103,14 +127,16 @@ sequenceDiagram
 
 # デモ
 
+[https://youtu.be/Shd2S1OJFts](https://youtu.be/Shd2S1OJFts)
+
 ---
 
 # 参考文献(1/2)
 
-- ソフトウエア品質を高める開発者テスト改訂版 (高橋寿一2022)
+- ソフトウエア品質を高める開発者テスト改訂版 (高橋寿一 2022)
   - ISBN978-4-7981-7639-0
 
-![ソフトウエア品質を高める開発者テスト改訂版](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/takahashi22.jpg)
+![width:500px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/takahashi22.jpg)
 
 
 ---
@@ -120,4 +146,4 @@ sequenceDiagram
 - システムテスト自動化標準ガイド (Mark Fewster, Dorothy Graham 1999)
   - ISBN978-4-7981-3921-0
 
-![システムテスト自動化標準ガイド](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/fewster99.jpg)
+![width:500px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/fewster99.jpg)
