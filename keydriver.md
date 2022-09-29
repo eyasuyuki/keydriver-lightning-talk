@@ -8,7 +8,12 @@
 
 # 今回開発したツール
 
-[https://github.com/eyasuyuki/keydriver](https://github.com/eyasuyuki/keydriver)
+## Keydriver
+  [https://github.com/eyasuyuki/keydriver](https://github.com/eyasuyuki/keydriver)
+  
+- ノーコードでe2eテストができる
+- オープンソース
+- 商用利用可(MITライセンス)
 
 ---
 
@@ -17,6 +22,7 @@
 - システムテストの技法の一つ
 - アクションキーワードとデータからなる表を使ってテストする
 - キーワード表を読み込んでSeleniumなどを動かすトライバーを作れば自動化できる
+- ......などとされているが**実践している人を誰も見たことがない幻のテスト技法**である
 
 ---
 
@@ -37,7 +43,7 @@
 - 操作を示すキーワードと、その対象となるデータが1つの表で表現できる
 - 画面が変更されてもドライバーをメンテナンスするだけで済む
 - 発表者が考えるメリット:
-  - システムテストの表記方法が統一できる
+  - システムテストの記述を標準化できる
   - テストデータが各所に分散するのを防止できる
 
 ---
@@ -47,11 +53,15 @@
 - ドライバーを書くのが大変
 - ドライバーのメンテナンスが大変
 
+これらの欠点により幻のテスト技法となってしまったのではないだろうか。
+
+## ではどうするか?
+
 ---
 
 # デメリットを頓知で解決する
 
-- ドライバーを書くのが面倒なら、キーワード表を拡張して画面依存の情報も含めたらどうか?
+- ドライバーを書くのが面倒なら、**キーワード表を拡張して画面依存の情報も含める**のはどうか?
 
 ---
 
@@ -80,6 +90,34 @@ sequenceDiagram
     WebDriver ->> Keydriver: ブラウズ結果
     Keydriver ->> Keydriver: 結果検証
 </div>
-<script src="https://unpkg.com/mermaid@8.1.0/dist/mermaid.min.js"></script>
+<script src="https://unpkg.com/mermaid@8.14.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 
+---
+
+# 実際のExcel表の例
+
+![Google検索.xlsx](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/excel_worksheet.png)
+
+---
+
+# デモ
+
+---
+
+# 参考文献(1/2)
+
+- ソフトウエア品質を高める開発者テスト改訂版 (高橋寿一2022)
+  - ISBN978-4-7981-7639-0
+
+![ソフトウエア品質を高める開発者テスト改訂版](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/takahashi22.jpg)
+
+
+---
+
+# 参考文献(2/2)
+
+- システムテスト自動化標準ガイド (Mark Fewster, Dorothy Graham 1999)
+  - ISBN978-4-7981-3921-0
+
+![システムテスト自動化標準ガイド](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/fewster99.jpg)
