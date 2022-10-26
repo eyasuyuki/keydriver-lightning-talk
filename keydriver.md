@@ -113,6 +113,8 @@ sequenceDiagram
     ブラウザ ->> WebDriver: ブラウズ結果
     WebDriver ->> Keydriver: ブラウズ結果
     Keydriver ->> Keydriver: 結果検証
+    Keydriver ->> POI: テスト結果出力
+    POI ->> Excel: テスト結果出力
 </div>
 <script src="https://unpkg.com/mermaid@8.14.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
