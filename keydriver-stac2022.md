@@ -121,6 +121,8 @@ sequenceDiagram
     ブラウザ ->> WebDriver: ブラウズ結果
     WebDriver ->> Keydriver: ブラウズ結果
     Keydriver ->> Keydriver: 結果検証
+    Keydriver ->> POI: テスト結果出力
+    POI ->> Excel: テスト結果出力
 </div>
 <script src="https://unpkg.com/mermaid@8.14.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
@@ -137,35 +139,54 @@ sequenceDiagram
 - 商用利用可(MITライセンス)
 - 気に入ったら☆(Star)ください🙇
 
+### Zennの記事
+
+[https://zenn.dev/eyasuyuki/articles/a20301d34adce0](https://zenn.dev/eyasuyuki/articles/a20301d34adce0)
+
 ---
 
 # デモ
+
+[https://youtu.be/Klqx18-cBgw](https://youtu.be/Klqx18-cBgw)
+
 
 ---
 
 # 利用可能なキーワード
 
-| キーワード | 説明 |
-------------|-------
-| open | URLを開く |
-| click | 要素をクリックする |
-| select | select要素を選択する |
-| input | input要素に入力する |
-| clear | input要素をクリアする |
-| accept | ダイアログでOKする |
-| dismiss | ダイアログをキャンセルする |
-| capture | スクリーンショットを撮る |
-| upload | file要素にファイル名を入力する |
-| assert | 値を検査する |
-| execute | SQLを実行する |
+| No  | キーワード             | 説明 |
+-----|-------------------|-------
+| 1   | open | URLを開く            |
+| 2   | click      | 要素をクリックする         |
+| 3   | select     | select要素を選択する     |
+| 4   | input      | input要素に入力する      |
+| 5   | clear      | input要素をクリアする     |
+| 6   | accept     | ダイアログでOKする        |
+| 7   | dismiss    | ダイアログをキャンセルする     |
+| 8   | capture    | スクリーンショットを撮る      |
+| 9   | upload     | file要素にファイル名を入力する |
+| 10  | assert     | 値を検査する            |
+| 11  | execute    | SQLを実行する          |
+| 12  | _DIRECTIVE | デフォルトキーワード        |
+
+
+※ 1〜11のどれにも一致しないキーワードが使われた場合、デフォルトキーワードとして解釈される
+
+※※ デフォルトキーワードは```sheet[ワークシート名]```で指定したワークシートをサブルーチンのように実行することができる。
 
 ---
 
-# 要素のセレクタの表記法
+# 要素セレクタの表記法
 
 ```
 tag[value#attribute]
 ```
+
+| タグ | 説明 |
+-------|-------
+| id | id要素 |
+| name | name要素 |
+| xpath | xpath |
 
 例
 ```
@@ -175,6 +196,52 @@ name[name_input#displayed]
 xpath[/html/head/title]
 ```
 
+※ デフォルトの```attribute```は```innerText```
+
 ---
 
+# データ型
 
+```
+tag[value]
+```
+
+上記の形式で下記のデータを表現できる。
+
+| タグ | 値 | 説明                 |
+-------|----|--------------------
+| text  | 文字列 | デフォルトのデータ型である      |
+| url   | URL         | HTTP-URLやJDBC接続URL |
+| sql | SQL文        |                    |
+| sheet | ワークシート名     |                    |
+
+----
+
+# 述語
+
+```
+tag[value]
+```
+
+タグに下記を使うことで述語を表現できる。
+
+| タグ | 説明    |
+-------|-------
+| is | 等価    |
+| isNot | 非等価   |
+| isNull | null  |
+| isNotNull | 非null |
+| greaterThan | より大きい |
+| greaterThanEqual | 以上    |
+| lessThan | より小さい |
+| lessThanEqual | 以下    |
+| fail | 失敗    |
+
+----
+
+# Keydriverのメリット
+
+- ノーコードで自動テストが行えるので、ビジネス目標が達成されるかどうかのテストに注力できる
+- ドメインエキスパートがキーワード表を作成し、テストエンジニアが実際の画面要素のセレクタを記述するといった分業が可能になる
+- キーワード表と実際の画面を結びつけるドライバーが不要で、画面変更時のメンテナンスの対象はキーワード表だけで済む
+- 他のワークシートをサブルーチンのように実行できるため、キーワードの階層化が可能になる　　　　　　　　　　　　　　　　　　　　　　　　
