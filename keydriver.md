@@ -23,6 +23,10 @@
 - 商用利用可(MITライセンス)
 - 気に入ったら☆(Star)ください🙇
 
+### Zennの記事
+
+[https://zenn.dev/eyasuyuki/articles/a20301d34adce0](https://zenn.dev/eyasuyuki/articles/a20301d34adce0)
+
 ---
 
 # キーワード駆動テストとは
@@ -129,7 +133,7 @@ sequenceDiagram
 
 # デモ
 
-[https://youtu.be/Shd2S1OJFts](https://youtu.be/Shd2S1OJFts)
+[https://youtu.be/Klqx18-cBgw](https://youtu.be/Klqx18-cBgw)
 
 ---
 
