@@ -26,7 +26,13 @@
 
 
 - 操作を表すアクションキーワードと、その対象となるデータで構成された表を使って行うテスト
-- 人間可読のキーワード表と実際の画面を結びつける**ドライバーを書けば**自動化できる
+- 人間可読のキー         ワード表と実際の画面を結びつける**ドライバーを書けば**自動化できる
+
+---
+
+# キーワード駆動テストの位置付け
+
+
 
 ---
 
@@ -108,6 +114,22 @@
 
 ---
 
+# 今回開発したツール
+
+## Keydriver
+[https://github.com/eyasuyuki/keydriver](https://github.com/eyasuyuki/keydriver)
+
+- ノーコードでe2eテストができる
+- オープンソース
+- 商用利用可(MITライセンス)
+- 気に入ったら☆(Star)ください🙇
+
+### Zennの記事
+
+[https://zenn.dev/eyasuyuki/articles/a20301d34adce0](https://zenn.dev/eyasuyuki/articles/a20301d34adce0)
+
+---
+
 # 動作概念図
 
 <div class="mermaid" style="font-size: 50%; text-align: center;">
@@ -126,22 +148,6 @@ sequenceDiagram
 </div>
 <script src="https://unpkg.com/mermaid@8.14.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
-
----
-
-# 今回開発したツール
-
-## Keydriver
-[https://github.com/eyasuyuki/keydriver](https://github.com/eyasuyuki/keydriver)
-
-- ノーコードでe2eテストができる
-- オープンソース
-- 商用利用可(MITライセンス)
-- 気に入ったら☆(Star)ください🙇
-
-### Zennの記事
-
-[https://zenn.dev/eyasuyuki/articles/a20301d34adce0](https://zenn.dev/eyasuyuki/articles/a20301d34adce0)
 
 ---
 
@@ -208,12 +214,12 @@ tag[value]
 
 上記の形式で下記のデータを表現できる。
 
-| タグ | 値 | 説明                 |
--------|----|--------------------
-| text  | 文字列 | デフォルトのデータ型である      |
-| url   | URL         | HTTP-URLやJDBC接続URL |
-| sql | SQL文        |                    |
-| sheet | ワークシート名     |                    |
+| タグ | 値 | 説明                                                                 |
+-------|----|--------------------------------------------------------------------
+| text  | 文字列 | デフォルトのデータ型である                                                      |
+| url   | URL         | HTTP-URLやJDBC接続URLを表現する                                            |
+| sql | SQL文        |                                                                    |
+| sheet | ワークシート名     | デフォルトキーワード```_DIRECTIVE```とともに使用する。指定したワークシートをサブルーチンのように実行することができる |
 
 ----
 
@@ -223,7 +229,7 @@ tag[value]
 tag[value]
 ```
 
-タグに下記を使うことで述語を表現できる。
+述語はキーワード```assert```とともに使用する。タグに下記を使うことでそれぞれの述語を表現できる。
 
 | タグ | 説明    |
 -------|-------
@@ -241,7 +247,7 @@ tag[value]
 
 # Keydriverのメリット
 
-- ノーコードで自動テストが行えるので、ビジネス目標が達成されるかどうかのテストに注力できる
+- ノーコードで自動テストが行えるので、ビジネスゴールが達成されるかどうかのテストに注力できる
 - ドメインエキスパートがキーワード表を作成し、テストエンジニアが実際の画面要素のセレクタを記述するといった分業が可能になる
 - キーワード表と実際の画面を結びつけるドライバーが不要で、画面変更時のメンテナンスの対象はキーワード表だけで済む
-- 他のワークシートをサブルーチンのように実行できるため、キーワードの階層化が可能になる　　　　　　　　　　　　　　　　　　　　　　　　
+- 他のワークシートをサブルーチンのように実行できるため、キーワードの階層化が可能になる
