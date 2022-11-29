@@ -90,7 +90,7 @@
 
 # Open2Testのテストケース
 
-
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/open2test.png)
 
 ---
 
@@ -103,6 +103,19 @@
 ### 目的に合わなかった理由
 
 - キーワード表の形式が気に入らない(納品物にならない)
+
+---
+
+# Robot frameworkのテストケース(1/2)
+
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/robot1.png)
+
+---
+
+# Robot frameworkのテストケース(2/2)
+
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/robot2.png)
+
 
 ---
 
@@ -253,9 +266,27 @@ tag[value]
 
 ----
 
-# Keydriverのメリット
+# Keydriverのメリット(1/4)
 
 - ノーコードで自動テストが行えるので、**ビジネスゴールが達成されるかどうかのテストに注力できる**
+
+----
+
+# Keydriverのメリット(2/4)
+
 - ドメインエキスパートがキーワード表を作成し、テストエンジニアが実際の画面要素のセレクタを記述するといった**分業が可能になる**
+
+
+----
+
+# Keydriverのメリット(3/4)
+
+
 - キーワード表と実際の画面を結びつける**ドライバーが不要**で、画面変更時の**メンテナンスの対象はキーワード表だけで済む**
+
+----
+
+# Keydriverのメリット(4/4)
+
+
 - 他のワークシートをサブルーチンのように実行できるため、**キーワードの階層化が可能**になる
