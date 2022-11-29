@@ -129,7 +129,7 @@
 
 # 拡張されたキーワード表
 
-![width:1900px](./images/keyword-driven-example-extended.png)
+![width:1900px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/keyword-driven-example-extended.png)
 
 - 印刷範囲外の列に画面依存の情報を書いている
 
@@ -270,12 +270,22 @@ tag[value]
 
 - ノーコードで自動テストが行えるので、**ビジネスゴールが達成されるかどうかのテストに注力できる**
 
+
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/checklist.jpg)
+
+Copyright (c) Vector4Stock - Freepik.com
+
+
 ----
 
 # Keydriverのメリット(2/4)
 
 - ドメインエキスパートがキーワード表を作成し、テストエンジニアが実際の画面要素のセレクタを記述するといった**分業が可能になる**
 
+
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/puzzle.jpg)
+
+Copyright (c) Studiogstock - Freepik.com
 
 ----
 
@@ -284,9 +294,13 @@ tag[value]
 
 - キーワード表と実際の画面を結びつける**ドライバーが不要**で、画面変更時の**メンテナンスの対象はキーワード表だけで済む**
 
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/gear.jpg)
+
+
 ----
 
 # Keydriverのメリット(4/4)
 
 
 - 他のワークシートをサブルーチンのように実行できるため、**キーワードの階層化が可能**になる
+
