@@ -304,3 +304,5 @@ Copyright (c) Studiogstock - Freepik.com
 
 - 他のワークシートをサブルーチンのように実行できるため、**キーワードの階層化が可能**になる
 
+
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/puppet.jpg)
