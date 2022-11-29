@@ -32,7 +32,7 @@
 
 # キーワード駆動テストの位置付け
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/TAK22-p138.jpg)
+![width:800px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/TAK22-p138.jpg)
 
 ソフトウエア品質を高める開発者テスト改訂版 (高橋寿一 2022) p.138 より
 
@@ -90,7 +90,7 @@
 
 # Open2Testのテストケース
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/open2test.png)
+![width:1000px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/open2test.png)
 
 ---
 
@@ -108,13 +108,13 @@
 
 # Robot frameworkのテストケース(1/2)
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/robot1.png)
+![width:800px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/robot1.png)
 
 ---
 
 # Robot frameworkのテストケース(2/2)
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/robot2.png)
+![width:800px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/robot2.png)
 
 
 ---
@@ -271,7 +271,7 @@ tag[value]
 - ノーコードで自動テストが行えるので、**ビジネスゴールが達成されるかどうかのテストに注力できる**
 
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/checklist.jpg)
+![width:800px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/checklist.jpg)
 
 Copyright (c) Vector4Stock - Freepik.com
 
@@ -283,7 +283,7 @@ Copyright (c) Vector4Stock - Freepik.com
 - ドメインエキスパートがキーワード表を作成し、テストエンジニアが実際の画面要素のセレクタを記述するといった**分業が可能になる**
 
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/puzzle.jpg)
+![width:600px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/puzzle.jpg)
 
 Copyright (c) Studiogstock - Freepik.com
 
@@ -294,7 +294,7 @@ Copyright (c) Studiogstock - Freepik.com
 
 - キーワード表と実際の画面を結びつける**ドライバーが不要**で、画面変更時の**メンテナンスの対象はキーワード表だけで済む**
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/gear.jpg)
+![width:600px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/gear.jpg)
 
 
 ----
@@ -305,4 +305,11 @@ Copyright (c) Studiogstock - Freepik.com
 - 他のワークシートをサブルーチンのように実行できるため、**キーワードの階層化が可能**になる
 
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/puppet.jpg)
+![width:600px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/puppet.png)
+
+---
+
+# Keydriverをぜひ試してみてください!
+
+[https://github.com/eyasuyuki/keydriver](https://github.com/eyasuyuki/keydriver)
+
