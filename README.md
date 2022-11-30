@@ -4,9 +4,9 @@
 npm install --save-dev @marp-team/marp-cli
 ```
 
-# Convert Markdown to HTML slide or PDF
+# Convert Markdown to HTML slide
 
 ```
-npx @marp-team/marp-cli --theme keydriver.css keydriver.md --html
+npx @marp-team/marp-cli --engine ./marp.config.js --theme keydriver.css keydriver.md --html
 ```
 

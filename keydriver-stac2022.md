@@ -153,8 +153,7 @@
 
 # 動作概念図
 
-<div class="mermaid" style="font-size: 50%; text-align: center;">
-sequenceDiagram
+@startuml
     Keydriver ->> POI: Excelファイル読み込み
     POI ->> Excel: 読み込み
     Excel ->> POI: ワークシート
@@ -166,9 +165,7 @@ sequenceDiagram
     Keydriver ->> Keydriver: 結果検証
     Keydriver ->> POI: テスト結果出力
     POI ->> Excel: テスト結果出力
-</div>
-<script src="https://unpkg.com/mermaid@8.14.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
+@enduml
 
 ---
 
@@ -292,9 +289,39 @@ Copyright (c) Studiogstock - Freepik.com
 # Keydriverのメリット(3/4)
 
 
-- キーワード表と実際の画面を結びつける**ドライバーが不要**で、画面変更時の**メンテナンスの対象はキーワード表だけで済む**
+- 画面が変更されても**ドライバーをメンテナンスする必要はなく**、キーワード表をメンテナンスすれば済む
 
-![width:600px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/gear.jpg)
+@startuml
+file キーワード表 as k1
+frame 他のキーワード駆動ツール {
+component Driver as d1
+component Reader as r1
+}
+r1 -down-> d1
+actor ドメインエキスパート as e1
+actor テストエンジニア as t1
+node ブラウザ as b1
+e1 -up->> k1: 作成
+t1 -up->> d1: メンテナンス
+r1 -le->> k1: 読み込み
+d1 -ri->> b1: 操作
+@enduml
+
+@startuml
+file キーワード表 as k1
+frame Keydriver {
+component Driver as d1
+component Reader as r1
+}
+r1 -down-> d1
+actor ドメインエキスパート as e1
+actor テストエンジニア as t1
+node ブラウザ as b1
+e1 -up->> k1: 作成
+t1 -up->> k1: メンテナンス
+r1 -le->> k1: 読み込み
+d1 -ri->> b1: 操作
+@enduml
 
 
 ----
@@ -313,4 +340,11 @@ Copyright (c) Studiogstock - Freepik.com
 
 [https://github.com/eyasuyuki/keydriver](https://github.com/eyasuyuki/keydriver)
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/keydriver-github.png)
+![width:800px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/keydriver-github.png)
+
+---
+
+# ソフトウェアテストアドベントカレンダー2022 12/3
+
+[https://qiita.com/advent-calendar/2022/softwaretesting](https://qiita.com/advent-calendar/2022/softwaretesting)
+
