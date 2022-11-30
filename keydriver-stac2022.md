@@ -351,4 +351,4 @@ d1 -ri->> b1: 操作
 こちらで取り上げていただきました。
 
 
-![width:800px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/calendar.png)
+![](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/calendar.png)
