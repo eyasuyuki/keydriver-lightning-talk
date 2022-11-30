@@ -344,7 +344,7 @@ d1 -ri->> b1: 操作
 
 ---
 
-# ソフトウェアテストアドベントカレンダー2022 12/3
+# ソフトウェアテスト Advent Calendar 2022
 
 [https://qiita.com/advent-calendar/2022/softwaretesting](https://qiita.com/advent-calendar/2022/softwaretesting)
 
