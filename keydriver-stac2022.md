@@ -348,3 +348,5 @@ d1 -ri->> b1: 操作
 
 [https://qiita.com/advent-calendar/2022/softwaretesting](https://qiita.com/advent-calendar/2022/softwaretesting)
 
+
+![width:600px](https://raw.githubusercontent.com/eyasuyuki/keydriver-lightning-talk/master/images/calendar.png)
